@@ -34,11 +34,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="buttonToMenu" destination="MC6-23-rlv" id="1L3-pz-uFC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFr-Xq-DNP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="g1n-Y7-Ht4">
                     <connections>
                         <action selector="swipeHandler:" destination="yOi-Up-ldJ" id="HKC-lA-JcU"/>
+                        <segue destination="qTO-Z7-ALW" kind="show" id="g60-wB-OcH"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -159,4 +163,7 @@
         <image name="line.horizontal.3" catalog="system" width="64" height="32"/>
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="g60-wB-OcH"/>
+    </inferredMetricsTieBreakers>
 </document>
