@@ -13,10 +13,10 @@ class ViewController: UIViewController , UICollectionViewDelegate , UICollection
     @IBOutlet weak var buttonToMenu: UIBarButtonItem!
     @IBOutlet weak var collectionView: UICollectionView!
     var laptops = [
-    UIImage(named: "Dog"),
-    UIImage(named: "Dog"),
-    UIImage(named: "Dog"),
-    UIImage(named: "Dog")
+    UIImage(named: "laptop1"),
+    UIImage(named: "laptop2"),
+    UIImage(named: "laptop3"),
+    UIImage(named: "laptop4")
     ]
     
     override func viewDidLoad() {
@@ -51,6 +51,10 @@ class ViewController: UIViewController , UICollectionViewDelegate , UICollection
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
 }
 
