@@ -14,7 +14,8 @@ class SideMenuController: UIViewController , UITableViewDataSource , UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //change the height of tableViewCell
+        tableView.rowHeight = 90
         // Do any additional setup after loading the view.
     }
     
@@ -37,7 +38,7 @@ class SideMenuController: UIViewController , UITableViewDataSource , UITableView
       guard let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as? CustomTableViewCell else {
                  return UITableViewCell()
              }
-        cell.configure(title : cellule.libele, image: cellule.image)
+        cell.configure(title : cellule.libele)
               return cell
         
     }

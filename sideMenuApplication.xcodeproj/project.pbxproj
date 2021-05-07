@@ -16,6 +16,7 @@
 		4F48BA67264492D900A2A88E /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48BA66264492D800A2A88E /* SideMenuController.swift */; };
 		4F5F88AB2644C0120055C4A4 /* SideMenuContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F88AA2644C0120055C4A4 /* SideMenuContent.swift */; };
 		4F5F88AF2644C5860055C4A4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F88AE2644C5860055C4A4 /* CustomTableViewCell.swift */; };
+		4F5F88B12644DEEA0055C4A4 /* Balham.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F5F88B02644DEE90055C4A4 /* Balham.otf */; };
 		65869073DC2BE8AAF645AC33 /* Pods_sideMenuApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFBBEB84524D8FA4B5178C2 /* Pods_sideMenuApplication.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		4F48BA66264492D800A2A88E /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
 		4F5F88AA2644C0120055C4A4 /* SideMenuContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuContent.swift; sourceTree = "<group>"; };
 		4F5F88AE2644C5860055C4A4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		4F5F88B02644DEE90055C4A4 /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Balham.otf; path = Result/Balham.otf; sourceTree = SOURCE_ROOT; };
 		7BD8FC3A617733C5A606D36E /* Pods-sideMenuApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sideMenuApplication.release.xcconfig"; path = "Target Support Files/Pods-sideMenuApplication/Pods-sideMenuApplication.release.xcconfig"; sourceTree = "<group>"; };
 		B9EFBA7845DDF3D06EE39B0E /* Pods-sideMenuApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sideMenuApplication.debug.xcconfig"; path = "Target Support Files/Pods-sideMenuApplication/Pods-sideMenuApplication.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				4F5F88AC2644C12C0055C4A4 /* Controller */,
 				4F48BA5B264485B200A2A88E /* Assets.xcassets */,
 				4F48BA60264485B200A2A88E /* Info.plist */,
+				4F5F88B02644DEE90055C4A4 /* Balham.otf */,
 			);
 			path = sideMenuApplication;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			files = (
 				4F48BA5F264485B200A2A88E /* LaunchScreen.storyboard in Resources */,
 				4F48BA5C264485B200A2A88E /* Assets.xcassets in Resources */,
+				4F5F88B12644DEEA0055C4A4 /* Balham.otf in Resources */,
 				4F48BA5A264485A700A2A88E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

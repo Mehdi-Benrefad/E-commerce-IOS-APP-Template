@@ -9,13 +9,13 @@
 import Foundation
 
 struct SideMenu{
-    var image = String()
+    
     var libele = String()
 }
 
 var list = [
-            SideMenu(image:"aaa",libele:"Profile"),
-            SideMenu(image:"aaa",libele:"New Arrivals"),
-            SideMenu(image:"aaa",libele:"Best Sellers"),
-            SideMenu(image:"aaa",libele:"Logout")
+            SideMenu(libele:"Profile"),
+            SideMenu(libele:"New Arrivals"),
+            SideMenu(libele:"Best Sellers"),
+            SideMenu(libele:"Logout")
             ]

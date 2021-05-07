@@ -31,9 +31,9 @@ class CustomTableViewCell: UITableViewCell {
        }
        
        //on cofigure notre vue customisee
-       func configure(title:String,image:String){
+       func configure(title:String){
            
-        self.imageCell.image = UIImage(named:image)
+        self.imageCell.image = UIImage(named: title)
         self.title.text=title
            // subtitleLabel.text=String(year)
        }
