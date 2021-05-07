@@ -57,6 +57,18 @@ class SideMenuController: UIViewController , UITableViewDataSource , UITableView
                 let newViewController = storyBoard.instantiateViewController(withIdentifier: "ProfileViewController") as! UINavigationController
                 newViewController.modalPresentationStyle = .fullScreen
                 self.present(newViewController, animated: true, completion: nil)
+            
+            case "Best Sellers":
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "TopSellersViewController") as! UINavigationController
+                newViewController.modalPresentationStyle = .fullScreen
+                self.present(newViewController, animated: true, completion: nil)
+            
+            case "New Arrivals":
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "NewArrivalsViewController") as! UINavigationController
+                newViewController.modalPresentationStyle = .fullScreen
+                self.present(newViewController, animated: true, completion: nil)
         default:
             print("other")
         }

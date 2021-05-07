@@ -13,6 +13,38 @@
         </array>
     </customFonts>
     <scenes>
+        <!--New Products-->
+        <scene sceneID="7r3-Gy-ZiX">
+            <objects>
+                <viewController id="v9g-Qh-pRd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="NewArrivalsViewController" id="1b4-kh-fCB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="Msa-29-CAi"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pam-eS-Iqi" appends="YES" id="fhO-tN-qVV"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Products" id="koN-Yw-k8e">
+                        <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="3cf-qK-EwY">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="qTO-Z7-ALW" kind="show" id="1BG-AL-6eF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DOi-Kc-da0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="pam-eS-Iqi">
+                    <connections>
+                        <segue destination="qTO-Z7-ALW" kind="show" id="PPw-XP-mYY"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1114" y="-805"/>
+        </scene>
         <!--Home-->
         <scene sceneID="gYy-f4-ztY">
             <objects>
@@ -246,6 +278,38 @@
             </objects>
             <point key="canvasLocation" x="-1078.2608695652175" y="640.76086956521749"/>
         </scene>
+        <!--Best Sellers-->
+        <scene sceneID="KqR-Jw-3FD">
+            <objects>
+                <viewController id="DQ4-gh-dE1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6WL-z5-CFQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="Abl-Dt-xOc"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="O5N-Yl-xl1" appends="YES" id="vNR-Qg-jKi"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Best Sellers" id="eqM-7q-hnU">
+                        <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="SHc-2j-FFc">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="qTO-Z7-ALW" kind="show" id="4YF-DL-3vc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86i-8a-aS2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="O5N-Yl-xl1">
+                    <connections>
+                        <segue destination="qTO-Z7-ALW" kind="show" id="Awd-iS-afW"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1078" y="1361"/>
+        </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="EFd-Wq-chx">
             <objects>
@@ -376,12 +440,48 @@
             </objects>
             <point key="canvasLocation" x="-1988" y="641"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dBv-Kq-m1j">
+            <objects>
+                <navigationController storyboardIdentifier="TopSellersViewController" automaticallyAdjustsScrollViewInsets="NO" id="Id0-QQ-3j4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mbG-p4-3Ue">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DQ4-gh-dE1" kind="relationship" relationship="rootViewController" id="aeK-wT-eWY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ri-fC-Z3v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1988" y="1361"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1ig-ec-ufm">
+            <objects>
+                <navigationController storyboardIdentifier="NewArrivalsViewController" automaticallyAdjustsScrollViewInsets="NO" id="b72-Dn-ely" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TJY-QS-jxZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="v9g-Qh-pRd" kind="relationship" relationship="rootViewController" id="uDR-8w-Ilb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65Q-XB-SCI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1988" y="-805"/>
+        </scene>
     </scenes>
     <resources>
         <image name="line.horizontal.3" catalog="system" width="64" height="32"/>
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sGk-dJ-oQp"/>
+        <segue reference="1BG-AL-6eF"/>
     </inferredMetricsTieBreakers>
 </document>
