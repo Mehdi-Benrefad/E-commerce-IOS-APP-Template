@@ -15,12 +15,16 @@
         <!--Home-->
         <scene sceneID="gYy-f4-ztY">
             <objects>
-                <viewController id="yOi-Up-ldJ" sceneMemberID="viewController">
+                <viewController id="yOi-Up-ldJ" customClass="ViewController" customModule="sideMenuApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VmI-n1-kk8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="bgc-5o-Mds"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="g1n-Y7-Ht4" appends="YES" id="lpo-iM-XIZ"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="0wA-Cr-HGg">
                         <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="MC6-23-rlv">
@@ -32,6 +36,11 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFr-Xq-DNP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="g1n-Y7-Ht4">
+                    <connections>
+                        <action selector="swipeHandler:" destination="yOi-Up-ldJ" id="HKC-lA-JcU"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1078.2608695652175" y="-48.214285714285715"/>
         </scene>
@@ -58,7 +67,7 @@
         <!--Menu-->
         <scene sceneID="xFl-bw-0X2">
             <objects>
-                <viewController id="9DY-kS-0fc" customClass="SideMenuController" customModule="sideMenuApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SideMenu" id="9DY-kS-0fc" customClass="SideMenuController" customModule="sideMenuApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bw1-hW-hFZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
