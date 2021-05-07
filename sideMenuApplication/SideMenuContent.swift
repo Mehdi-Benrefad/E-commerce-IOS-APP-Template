@@ -14,8 +14,8 @@ struct SideMenu{
 }
 
 var list = [
-            SideMenu(image:"",libele:""),
-            SideMenu(image:"",libele:""),
-            SideMenu(image:"",libele:""),
-            SideMenu(image:"",libele:"")
+            SideMenu(image:"aaa",libele:"Profile"),
+            SideMenu(image:"aaa",libele:"New Arrivals"),
+            SideMenu(image:"aaa",libele:"Best Sellers"),
+            SideMenu(image:"aaa",libele:"Logout")
             ]
