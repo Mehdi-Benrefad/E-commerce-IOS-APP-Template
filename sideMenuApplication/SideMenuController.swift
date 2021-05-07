@@ -43,8 +43,25 @@ class SideMenuController: UIViewController , UITableViewDataSource , UITableView
         
     }
     
-    
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch list[indexPath.row].libele{
+            case "Home" :
+                print("hellooo")
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! UINavigationController
+                newViewController.modalPresentationStyle = .fullScreen
+                self.present(newViewController, animated: true, completion: nil)
+            
+            case "Profile":
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "ProfileViewController") as! UINavigationController
+                newViewController.modalPresentationStyle = .fullScreen
+                self.present(newViewController, animated: true, completion: nil)
+        default:
+            print("other")
+        }
+    }
+   
     
     
 }

@@ -18,6 +18,7 @@
 		4F5F88AF2644C5860055C4A4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5F88AE2644C5860055C4A4 /* CustomTableViewCell.swift */; };
 		4F5F88B12644DEEA0055C4A4 /* Balham.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F5F88B02644DEE90055C4A4 /* Balham.otf */; };
 		4FDF476F2645AC1C00AF9EDD /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF476E2645AC1C00AF9EDD /* HomeCollectionViewCell.swift */; };
+		4FDF47712645E4A000AF9EDD /* SideMenuContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF47702645E4A000AF9EDD /* SideMenuContentController.swift */; };
 		65869073DC2BE8AAF645AC33 /* Pods_sideMenuApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFBBEB84524D8FA4B5178C2 /* Pods_sideMenuApplication.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		4F5F88AE2644C5860055C4A4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		4F5F88B02644DEE90055C4A4 /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Balham.otf; path = Result/Balham.otf; sourceTree = SOURCE_ROOT; };
 		4FDF476E2645AC1C00AF9EDD /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		4FDF47702645E4A000AF9EDD /* SideMenuContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuContentController.swift; sourceTree = "<group>"; };
 		7BD8FC3A617733C5A606D36E /* Pods-sideMenuApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sideMenuApplication.release.xcconfig"; path = "Target Support Files/Pods-sideMenuApplication/Pods-sideMenuApplication.release.xcconfig"; sourceTree = "<group>"; };
 		B9EFBA7845DDF3D06EE39B0E /* Pods-sideMenuApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sideMenuApplication.debug.xcconfig"; path = "Target Support Files/Pods-sideMenuApplication/Pods-sideMenuApplication.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 				4F48BA56264485A700A2A88E /* ViewController.swift */,
 				4F5F88AE2644C5860055C4A4 /* CustomTableViewCell.swift */,
 				4FDF476E2645AC1C00AF9EDD /* HomeCollectionViewCell.swift */,
+				4FDF47702645E4A000AF9EDD /* SideMenuContentController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				4FDF476F2645AC1C00AF9EDD /* HomeCollectionViewCell.swift in Sources */,
 				4F5F88AF2644C5860055C4A4 /* CustomTableViewCell.swift in Sources */,
 				4F48BA57264485A700A2A88E /* ViewController.swift in Sources */,
+				4FDF47712645E4A000AF9EDD /* SideMenuContentController.swift in Sources */,
 				4F5F88AB2644C0120055C4A4 /* SideMenuContent.swift in Sources */,
 				4F48BA67264492D900A2A88E /* SideMenuController.swift in Sources */,
 				4F48BA53264485A700A2A88E /* AppDelegate.swift in Sources */,
