@@ -415,13 +415,26 @@
                     <view key="view" contentMode="scaleToFill" id="acM-EQ-FMS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="404" translatesAutoresizingMaskIntoConstraints="NO" id="Olz-cp-rt6">
+                                <rect key="frame" x="27" y="148" width="360" height="440"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="TBj-Tn-FC8"/>
+                                    <constraint firstAttribute="height" constant="440" id="iib-IL-jVX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Olz-cp-rt6" firstAttribute="centerY" secondItem="acM-EQ-FMS" secondAttribute="centerY" id="AlC-1j-NG9"/>
+                            <constraint firstItem="Olz-cp-rt6" firstAttribute="centerX" secondItem="acM-EQ-FMS" secondAttribute="centerX" id="c2e-wt-VZd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="R5S-xw-Ipa"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9c-Nj-g23" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1415.9420289855072" y="-823.36956521739137"/>
+            <point key="canvasLocation" x="1414.4927536231885" y="-823.36956521739137"/>
         </scene>
         <!--Menu-->
         <scene sceneID="xFl-bw-0X2">
