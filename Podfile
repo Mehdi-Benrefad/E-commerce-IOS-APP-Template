@@ -9,4 +9,6 @@ target 'sideMenuApplication' do
   
 pod 'SideMenu'
 
+pod 'AMPopTip'
+
 end

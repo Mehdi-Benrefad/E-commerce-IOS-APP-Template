@@ -1,16 +1,20 @@
 PODS:
+  - AMPopTip (4.5.3)
   - SideMenu (6.5.0)
 
 DEPENDENCIES:
+  - AMPopTip
   - SideMenu
 
 SPEC REPOS:
   trunk:
+    - AMPopTip
     - SideMenu
 
 SPEC CHECKSUMS:
+  AMPopTip: 77eef4793d50709bef83825b72da4f501263b91d
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: 83fffe855ad75e61acc2913a62a8be88cf711ac1
+PODFILE CHECKSUM: c40b030346a6b870583a96ae7df1f0c1e29a858e
 
 COCOAPODS: 1.10.1
