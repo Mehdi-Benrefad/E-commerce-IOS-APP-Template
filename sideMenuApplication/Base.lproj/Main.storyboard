@@ -20,8 +20,21 @@
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="NewArrivalsViewController" id="1b4-kh-fCB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="404" translatesAutoresizingMaskIntoConstraints="NO" id="WBX-NO-GAa">
+                                <rect key="frame" x="26.666666666666657" y="149.66666666666663" width="361" height="437"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="a9p-Cm-Hbs"/>
+                                    <constraint firstAttribute="height" constant="437" id="s88-Wg-LYQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="WBX-NO-GAa" firstAttribute="centerY" secondItem="1b4-kh-fCB" secondAttribute="centerY" id="bRr-89-MTH"/>
+                            <constraint firstItem="WBX-NO-GAa" firstAttribute="centerX" secondItem="1b4-kh-fCB" secondAttribute="centerX" id="pFL-hM-G6r"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Msa-29-CAi"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="pam-eS-Iqi" appends="YES" id="fhO-tN-qVV"/>
@@ -34,6 +47,11 @@
                                 <segue destination="qTO-Z7-ALW" kind="show" id="1BG-AL-6eF"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="cube.box.fill" catalog="system" id="DtM-5Z-mkz">
+                            <connections>
+                                <segue destination="R1m-0v-YEJ" kind="show" id="EsO-uQ-CUM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DOi-Kc-da0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -43,7 +61,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1114" y="-805"/>
+            <point key="canvasLocation" x="-1114.4927536231885" y="-805.43478260869574"/>
         </scene>
         <!--Home-->
         <scene sceneID="gYy-f4-ztY">
@@ -162,6 +180,11 @@
                                 <segue destination="qTO-Z7-ALW" kind="show" id="gfR-up-OTY"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="cube.box.fill" catalog="system" id="vw8-e8-smo">
+                            <connections>
+                                <segue destination="R1m-0v-YEJ" kind="show" id="RuW-ee-zkg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="buttonToMenu" destination="MC6-23-rlv" id="1L3-pz-uFC"/>
@@ -187,7 +210,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M9i-f2-nq7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="M9i-f2-nq7">
                                 <rect key="frame" x="134" y="102" width="146" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -267,6 +290,11 @@
                                 <segue destination="qTO-Z7-ALW" kind="show" id="sGk-dJ-oQp"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="cube.box.fill" catalog="system" id="rYK-iO-Dmt">
+                            <connections>
+                                <segue destination="R1m-0v-YEJ" kind="show" id="9za-Fi-BGK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NpX-Lz-XQ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -344,6 +372,11 @@
                                 <segue destination="qTO-Z7-ALW" kind="show" id="4YF-DL-3vc"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="cube.box.fill" catalog="system" id="5rl-ax-5xW">
+                            <connections>
+                                <segue destination="R1m-0v-YEJ" kind="show" id="dGu-GP-X0O"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86i-8a-aS2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -374,6 +407,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaf-uE-WmQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-307.24637681159425" y="-46.205357142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="p8r-Ix-oQ7">
+            <objects>
+                <viewController id="R1m-0v-YEJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acM-EQ-FMS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="R5S-xw-Ipa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r9c-Nj-g23" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1415.9420289855072" y="-823.36956521739137"/>
         </scene>
         <!--Menu-->
         <scene sceneID="xFl-bw-0X2">
@@ -455,7 +503,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="itw-Gl-Yiw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -523,11 +571,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="404" width="4375" height="4375"/>
         <image name="Best Sellers" width="2364" height="2364"/>
+        <image name="Profile" width="1024" height="1024"/>
+        <image name="cube.box.fill" catalog="system" width="64" height="62"/>
         <image name="line.horizontal.3" catalog="system" width="64" height="32"/>
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4YF-DL-3vc"/>
+        <segue reference="EsO-uQ-CUM"/>
+        <segue reference="1BG-AL-6eF"/>
     </inferredMetricsTieBreakers>
 </document>
