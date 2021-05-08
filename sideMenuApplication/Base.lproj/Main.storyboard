@@ -291,11 +291,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MysellersCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="82" id="mo3-Lc-TlP">
-                                        <rect key="frame" x="0.0" y="28" width="314" height="82"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MysellersCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MysellersCell" rowHeight="100" id="mo3-Lc-TlP" customClass="BestSellerTableViewCell" customModule="sideMenuApplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="314" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mo3-Lc-TlP" id="fgl-ip-jSK">
-                                            <rect key="frame" x="0.0" y="0.0" width="314" height="82"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yqC-gx-zs6">
@@ -318,6 +318,9 @@
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="sellerName" destination="oPp-YR-dxF" id="i4h-xu-Zfr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
