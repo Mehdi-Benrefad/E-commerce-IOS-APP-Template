@@ -281,10 +281,52 @@
         <!--Best Sellers-->
         <scene sceneID="KqR-Jw-3FD">
             <objects>
-                <viewController id="DQ4-gh-dE1" sceneMemberID="viewController">
+                <viewController id="DQ4-gh-dE1" customClass="BestSellersController" customModule="sideMenuApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6WL-z5-CFQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J11-Gj-1j8">
+                                <rect key="frame" x="50" y="78" width="314" height="600"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MysellersCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="82" id="mo3-Lc-TlP">
+                                        <rect key="frame" x="0.0" y="28" width="314" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mo3-Lc-TlP" id="fgl-ip-jSK">
+                                            <rect key="frame" x="0.0" y="0.0" width="314" height="82"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yqC-gx-zs6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="306" height="82"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Best Sellers" translatesAutoresizingMaskIntoConstraints="NO" id="Qtd-KK-0zh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="84" height="82"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPp-YR-dxF">
+                                                            <rect key="frame" x="92" y="25" width="189" height="32"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="22"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="DQ4-gh-dE1" id="fJg-1e-v3m"/>
+                                    <outlet property="delegate" destination="DQ4-gh-dE1" id="FwC-hG-nzZ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="Abl-Dt-xOc"/>
@@ -308,7 +350,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1078" y="1361"/>
+            <point key="canvasLocation" x="-1078.2608695652175" y="1360.5978260869567"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="EFd-Wq-chx">
@@ -478,10 +520,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Best Sellers" width="2364" height="2364"/>
         <image name="line.horizontal.3" catalog="system" width="64" height="32"/>
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1BG-AL-6eF"/>
+        <segue reference="4YF-DL-3vc"/>
     </inferredMetricsTieBreakers>
 </document>
