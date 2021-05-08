@@ -32,6 +32,7 @@ class BestSellersController: UIViewController , UITableViewDataSource {
             return UITableViewCell()
         }
         cell.configure(name: sellers[indexPath.row])
+        
         //cell.textLabel?= sellers[IndexPath.row]!
         return cell
     }
